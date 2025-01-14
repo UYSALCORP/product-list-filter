@@ -6,7 +6,7 @@ import { Header } from "./components/header/Header";
 function App() {
   return (
     <div>
-      <Header categories={categories} products={products} />
+      {/* <Header categories={categories} products={products} /> */}
       <ProductList products={products} categories={categories} />
     </div>
   );
