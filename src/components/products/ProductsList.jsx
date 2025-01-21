@@ -8,14 +8,18 @@ import { Header } from "../header/Header";
 
 const ProductsList = ({products}) => {
   const [search, setSearch] = useState("")
+  const [callCategory, setCallCategory] = useState("all")
+
   const handleChange = (e) =>{
     setSearch(e.target.value)
   }
-  const filteredData = products.filter((item)=>item.title.toLowerCase().includes(search.trim().toLowerCase()))
+  //! Kategori ve Arama filtresi birleştirme
+  const filteredData = products.filter((item)=>item.title.toLowerCase().includes(search.trim().toLowerCase()) && (callCategory === "all" || item.category.toLowerCase() === callCategory));
+
   return (
     <>
     {/* //! HEADER */}
-      <Header categories={categories} products={products}/>
+      <Header categories={categories} callCategory={callCategory} setCallCategory={setCallCategory}/>
       <Form.Control
         placeholder="Search Product..."
         type="search"
