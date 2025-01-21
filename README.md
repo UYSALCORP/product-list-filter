@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+<p>Clarusway<img align="right"
+  src="https://secure.meetupstatic.com/photos/event/3/1/b/9/600_488352729.jpeg"  width="15px"></p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project-05 : Product List
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Project aims to create a Product List App with search and filter functionality.
 
-### `yarn start`
+## Problem Statement
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- We are adding a new project to our portfolios. So you and your colleagues have started to work on the project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Skeleton
 
-### `yarn test`
+```
+ - Product List Filter
+|
+|----readme.md        
+├── public
+│     └── index.html
+├── src
+┣ 📂components
+┃ ┣ 📂Header
+┃ ┃ ┣ 📜Header.jsx
+┃ ┃ ┗ 📜Header.scss
+┃ ┗ 📂Products
+┃ ┃ ┣ 📜ProductList.jsx
+┃ ┃ ┣ 📜ProductCard.jsx
+┃ ┃ ┗ 📜ProductCard.scss
+┣ 📂helper
+┃ ┗ 📜data.js
+┣ 📂scss
+┃ ┣ 📜_reset.scss
+┃ ┗ 📜_variables.scss
+┣ 📜App.js
+┣ 📜App.scss
+┗ 📜index.js
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Expected Outcome
 
-### `yarn build`
+![ProductList](productlist.gif)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### At the end of the project, following topics are to be covered;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- SCSS
 
-### `yarn eject`
+- JS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- ReactJS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React-Bootstrap
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### At the end of the project;
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- You can see the all filter styles in this project.
 
-## Learn More
+- I constructed the categories by using map() method in Header.jsx.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- I constructed the search input bar after then i filtered my own data fot both in one (Buttons and Search Bar)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- And just by using map() method i created my productCard component.
 
-### Code Splitting
+## Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[Live](https://uysalcorp.github.io/product-list-filter/)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Steps to Solution
 
-### Making a Progressive Web App
+- Step 1: Create React App using `npx create-react-app product-list-filter` or `yarn create-react-app product-list-filter`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Step 2: Build product-list-app using [`data.js`](./data.js).
 
-### Advanced Configuration
+- Step 4: Push your application into your own public repo on Github
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Step 5: Add project gif to your project and README.md file.
 
-### Deployment
+## Notes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- You can add additional functionalities to your app.
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**<p align="center">&#9786; Happy Coding &#9997;</p>**
